@@ -2,7 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 const ServiceCard = ({ service }) => {
   const { title, img, price } = service;
   return (
-    <div className="card bg-base-100 shadow-xl border">
+    <div className="card bg-base-100 shadow-xl border flex flex-col">
       <figure className="px-10 pt-10">
         <img src={img} alt="Shoes" className="rounded-xl" />
       </figure>
