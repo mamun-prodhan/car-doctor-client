@@ -8,6 +8,7 @@ const CheckOut = () => {
   const { user } = useContext(AuthContext);
 
   const hanldeBookService = (event) => {
+    // const status = "Confirm";
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
@@ -19,6 +20,7 @@ const CheckOut = () => {
       customerName: name,
       email,
       img,
+      // status,
       date,
       service: title,
       service_id: _id,
